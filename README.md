@@ -1,10 +1,12 @@
 BrightLight Data Analytics Practicals
 
-This repository contains the completed solutions for the BrightLight Data Analytics Coding Practical, which includes three main components:
+This repository contains the completed solutions for the BrightLight Data Analytics Coding Practical, which includes 5 main components:
 
 - Practical 1 – SQL Fundamentals (Snowflake Basic SQL Syntax)
 - Practical 2 – SQL JOIN Practice (Orders, Products, Customers)
 - Practical 3 – Shopping Trends Data Cleaning & Exploration Queries
+- Practical exercise – Soccer SQL Questions (Microsoft SQL Server )
+- Practical exercise – Retail sales (Google BigQuery)
 
 Each practical is designed to evaluate SQL proficiency, data cleaning, querying ability, and foundational data analytics thinking.
 
@@ -58,19 +60,19 @@ Skills Demonstrated
 2.  Handling missing relationships (NULLs)
 3.  Producing correctly structured query outputs
 4.  Understanding one-to-many and many-to-one relationships
-5.  Using FULL OUTER JOIN fallbacks when DB engine does not support it natively
+5.  Using FULL OUTER JOIN fallbacks when the DB engine does not support it natively
 
  Practical 3: Shopping Trends Data Cleaning & Exploration
 
 Dataset: shopping_trends.csv
 Table: SHOPPING_DB.PUBLIC.SHOPPING_TRENDS
 
-This practical involves identifying missing values, applying the COALESCE function, using CASE logic, grouping data, and analyzing trends.
+This practical involves identifying missing values, applying the COALESCE function, using CASE logic, grouping data, and analysing trends.
 
 Concepts Tested
 
 - NULL handling (COALESCE
-- Conditional categorization (CASE)
+- Conditional categorisation (CASE)
 - Grouping and aggregation
 - Data quality checks
 - Basic exploratory data analysis in SQL
@@ -81,10 +83,60 @@ Skills Demonstrated
 2.  Creating derived variables (e.g., spender levels, delivery speed categories)
 3.  Aggregating by customer, location, season, etc.
 4.  Cleaning categorical variables
-5.  Highlighting meaningful patterns in shopping behavior
+5.  Highlighting meaningful patterns in shopping behaviour
 
  Tools Used
 
 - Snowflake (Primary SQL execution)
 - CSV dataset uploads
 - SQL Worksheet
+
+
+Practical 4: Soccer Team Analysis (Python Data Transformation & SQL Integration)
+
+Dataset: soccer_team_analysis.csv
+Table: SOCCER_TEAM_ANALYSIS
+
+This practical demonstrates the use of Python for data cleaning and transformation before SQL analysis. 
+The goal was to explore soccer team performance metrics and player statistics.
+
+Data Transformation Using Python:
+
+- Converted nvarchar numeric columns (e.g., shot_accuracy, goals) to numeric types using pd.to_numeric()
+- Handled missing values by filling or removing rows with NaN
+
+Extracted derived columns, such as:
+
+- Contract year from contract_end_year
+- Player efficiency ratios (goals per shot)
+- Standardised categorical columns like team and position
+- Saved the cleaned dataset to a database-friendly format for SQL queries
+
+Concepts Tested:
+
+Data type conversions and validation
+- Handling missing and inconsistent data
+- Feature engineering (derived metrics for analysis)
+- Preparing data for SQL aggregation and visualisation
+
+Skills Demonstrated:
+
+- Using Python pandas for robust data transformation
+- Cleaning text and numeric fields for analytics
+- Integrating Python-processed datasets into SQL workflows
+- Performing exploratory data analysis (EDA) using both Python and SQL
+- Writing SQL queries for aggregation, grouping, and correlation analysis
+
+Tools Used
+
+- SQL Server
+- Python (pandas) for data transformation
+- Jupyter Notebook for Python-based transformations
+- CSV dataset uploads
+- SQL Worksheet for queries
+
+
+
+
+
+
