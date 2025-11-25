@@ -135,6 +135,33 @@ Tools Used
 - CSV dataset uploads
 - SQL Worksheet for queries
 
+Practical 5: Retail sales (Google BigQuery)
+
+This repository contains SQL solutions to the BrightLearn BigQuery Practical Exercise, using the Retail Sales Dataset.
+All queries were executed and tested in Google BigQuery Sandbox, optimised to ensure compatibility with BigQuery’s SQL syntax.
+
+1. Dataset
+Retail Sales Dataset (Google BigQuery Sandbox)
+
+2. Objective of the Practical
+
+The exercise tests foundational SQL skills using real-world retail data.
+The focus is on:
+
+- Filtering
+- Aggregation
+- Conditional statements
+- Using CASE logic
+- Using WHERE and HAVING
+- Grouping and summarising retail performance
+- Calculated fields
+
+5. Technologies Used
+
+- Google BigQuery Sandbox
+- Standard SQL
+- Retail analytics concepts
+- Google Cloud Console
 
 
 
